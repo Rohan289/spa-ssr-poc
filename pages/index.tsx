@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import NextLink from 'next/link';
+import Posts from '../components/Posts';
 
 export default function App() {
   return (
@@ -23,7 +24,7 @@ export default function App() {
 
         <Routes>
           <Route path="/about" element={<h1>About</h1>} />
-          <Route path="/topics" element={<h1>Topics</h1>} />
+          <Route path="/topics" element={<Posts />} />
           <Route path="/" element={<h1>Home</h1>} />
         </Routes>
         <h1>React version: {React.version}</h1>

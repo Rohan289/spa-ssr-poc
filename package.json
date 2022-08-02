@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@types/react-router-dom": "latest",
-    "next": "latest",
+    "next": "^12.2.3",
     "react": "latest",
     "react-dom": "latest",
     "react-router-dom": "latest"
@@ -18,7 +18,7 @@
     "@types/node": "^12.12.21",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "typescript": "4.0"
+    "typescript": "^4.7.4"
   },
   "license": "MIT"
 }

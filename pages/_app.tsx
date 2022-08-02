@@ -1,9 +1,17 @@
 import { AppProps } from 'next/app';
-
+import { useEffect, useState } from 'react';
+import '../styles/globals.css';
 function App({ Component, pageProps }: AppProps) {
+  
+  const [render, SetRender] = useState(false)
+    
+  useEffect(() => {
+    SetRender(typeof window !== 'undefined')
+  }, [])
+
   return (
     <div suppressHydrationWarning>
-      {typeof window === 'undefined' ? null : <Component {...pageProps} />}
+      {render && <Component {...pageProps} />}
     </div>
   );
 }
